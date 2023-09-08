@@ -55,7 +55,6 @@ class ProfileViewController: UIViewController {
 		}
 	}
 	
-	
 }
 
 class MainSegPageViewController: UIPageViewController {
@@ -91,7 +90,6 @@ class MainSegPageViewController: UIPageViewController {
 		super.viewDidLoad()
 		dataSource = self
 		delegate = self
-		modalPresentationStyle = .formSheet
 		
 		if let firstViewController = subViewcontrollers.first {
 			setViewControllers([firstViewController],
@@ -99,8 +97,8 @@ class MainSegPageViewController: UIPageViewController {
 							   animated: true,
 							   completion: nil)
 		}
-				
 	}
+	
 }
 
 // MARK: UIPageViewControllerDataSource
